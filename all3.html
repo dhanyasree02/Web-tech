@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>all3. pots</title>
+<style>
+    /* Basic styling for the website */
+    body {
+      margin: 10;
+      padding: 10;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .product-image {
+      position: relative;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .product-image:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .product-details {
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    .project-details {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .project-details {
+      opacity: 1;
+    }
+
+    .project-details h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .project-details p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .product-description {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .image-container:hover .product-description {
+      opacity: 0;
+    }
+    .buy-now-button {
+        text-align: center;
+      background-color: green;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+    }
+    .center-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+}
+ /*center text*/
+ .center {
+  text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <img src="https://www.kopaipaar.com/wp-content/uploads/2018/03/Kopaipaar_-registerd-_logo_14-052017-1080x479.png" class="center-image">
+  <div class="navbar">
+    <a href="frst.html">Home</a>
+    <a href="addtocart.html">Favorites</a>
+    <a href="acc.html">Account</a>
+  </div>
+  <br>
+  <br>
+<hr>
+<h3 class="center">FUN CUSHIONS</h3>
+<p class="center">Browse our collection of fun cushions for children and adults alike.</p>
+  <div class="grid-container">
+
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2019/10/hippo-480x384.jpg" alt="Flower Vase 1">
+      <div class="image-overlay"></div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 1</h3>
+        </div>
+        <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div>
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+      </div>
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/round-vase-rustic-480x384.jpg" alt="Flower Vase 2">
+      <div class="image-overlay"></div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 2</h3></div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div> 
+        
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+    </div>
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Ceramic-Plater-Vase-Marble-effect-glaze-480x384.jpg" alt="Flower Vase 3">
+      <div class="image-overlay"></div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 3</h3></div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div> 
+        
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+    </div>
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Ceramic-Vase-Brown-and-Black-480x384.jpg" alt="Flower Vase 4">
+      <div class="image-overlay"></div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 4</h3></div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div>
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+      
+    </div>
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Close-Up-Ceramic-Planter-Vase-Marble-effect-glaze-S-480x384.jpg" alt="Flower Vase 5">
+      <div class="image-overlay"></div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 5</h3></div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div>
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+    </div>
+    <div class="product-image">
+      <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Ceramic-Vase-Blue-Silver-Grey-480x384.jpg" alt="Flower Vase 6">
+      <div class="image-overlay"> </div>
+        <div class="product-detail">
+          <h3 class="center">Flower Vase 6</h3></div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950</p>
+          </div>
+          <div class="center">
+            <a class="buy-now-button" href="buynow.html">Buy Now</a></div>
+      
+    </div>
+    
+    
+  </div>
+
+  <div class="footer">
+    &copy; 2023 My Website. All rights reserved.
+  </div>
+</body>
+</html>

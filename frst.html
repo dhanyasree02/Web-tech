@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Online Handicraft Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+       /*Basic styling for the navigation bar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #dfed48;
+      color: #080101;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navbar-logo {
+      color: #000000;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .navbar-search {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar {
+      padding: 6px;
+      border-radius: 4px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .country-dropdown {
+      margin-right: 10px;
+      position: relative;
+    }
+
+    /* Styling for the dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content,
+    .dropdown.show .dropdown-content {
+      display: block;
+    }
+
+    .country-field {
+      padding: 6px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .country-field:hover + .dropdown-content {
+      display: block;
+    }
+  
+/* Set the font family and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Style the navigation bar */
+nav {
+  background-color: #dfed48;
+  color: #040000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Style the logo */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Style the navigation links */
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style the dropdown menus */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+}
+
+nav ul ul li {
+  display: block;
+  width: 100%;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Style the central image */
+.center-image {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+ /* Basic styling for the website */
+ body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-image {
+      max-width: 50%;
+    }
+
+    .right-image {
+      max-width: 50%;
+      text-align: right;
+    }
+    /* Basic styling for the grid */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+    }
+    /*center text*/
+    .center {
+  text-align: center;
+    }
+
+    /* Basic styling for the website */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      padding: 20px;
+    }
+
+    .image-grid .image-container {
+      position: relative;
+    }
+
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 95%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .image-overlay {
+      opacity: 1;
+    }
+    .project-details {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .project-details {
+      opacity: 1;
+    }
+
+    .project-details h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .project-details p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+    .product-description {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    .image-container:hover .product-description {
+      opacity: 0;
+    }
+    /*star rating*/
+    .checked {
+  color: rgb(250, 137, 8);
+}
+
+.description {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+</style>
+
+  </head>
+  
+  <body>
+    <script>
+      // JavaScript to toggle dropdown visibility
+      document.addEventListener('DOMContentLoaded', function() {
+        var dropdown = document.querySelector('.dropdown');
+  
+        dropdown.addEventListener('click', function() {
+          dropdown.classList.toggle('show');
+        });
+  
+        dropdown.addEventListener('mouseleave', function() {
+          dropdown.classList.remove('show');
+        });
+  
+        var countryField = document.querySelector('.country-field');
+        var dropdownContent = document.querySelector('.dropdown-content');
+  
+        countryField.addEventListener('click', function() {
+          dropdownContent.style.display = 'block';
+        });
+      });
+    </script>
+    <br>
+    <br>
+    <div class="navbar">
+      <a href="#" class="navbar-logo"><i>Online Handicraft Shopping</i></a>
+      <div class="navbar-search">
+        <input type="text" class="search-bar" placeholder="Search">
+        
+        <div class="dropdown country-dropdown">
+          
+          <span class="country-field" >Choose Country</span>
+          <div class="dropdown-content" >
+            <a href="#"> India</a>
+            <a href="#">United Kindom</a>
+            <a href="#">US</a>
+            <a href="#">Mexico</a>
+            <a href="#">Australia</a>
+            <a href="#">Monaco</a>
+            <a href="#">Canada</a>
+            <a href="#">France</a>
+            <a href="#">Germany</a>
+            <!-- Add more countries as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation bar -->
+    <img src="https://www.kopaipaar.com/wp-content/uploads/2018/03/Kopaipaar_-registerd-_logo_14-052017-1080x479.png" class="center-image">
+    <nav>
+      <div class="logo"></div>
+      <ul>
+        
+        <li>
+          <a href="#">Shop</a>
+          
+          <br>
+          
+        </li>
+        <li><a href="addtocart.html">Favorite</a></li>
+        <li><a href="acc.html">Account</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- Central image -->
+    <br>
+    <br>
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2019/07/baskets.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2019/07/FFN.SCARVES-HOME-PAGE-1.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2019/07/Animal-Cushions-Home-Page.jpg" style="width:100%">
+        <div class="text"></div>
+      </div>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+      <br>
+      <br>
+      <div class="container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2019/07/Webp.net-resizeimage-8women.png" alt="Left Image" class="left-image" style="width:8%">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2019/07/Untitled-design-he.png" alt="Right Image" class="right-image" style="width:8%">
+      </div>
+
+
+      <div class="image-grid">
+        <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Ceramic-single-stem-vases-480x384.jpg" alt="Image 1" style="width:100%" >
+        <div class="description">
+        <a class="image-grid" href="all3.html">CERAMIC-DECORATIONS</a>
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2021/03/Kopai-Paar.Kantha-Upcycled-Saree-Blanket2.jpg" alt="Image 2" style="width:100%">
+        <div class="description">
+          <a class="image-grid" href="all2.html">PLACEMATS-RUNNERS</a>
+          </div>
+      </div>
+      <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2021/03/Kopai-Paar.Laundry-Basket.Natural-Fibre.Red1_-600x480.jpg" alt="Image 3" style="width:100%">
+        <div class="description">
+          <a class="image-grid" href="all4.html">LAUNDRY BASKETS</a>
+          </div>
+      </div>
+      <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2016/09/Scarf-Handloom-Cotton-Squares-with-Pom-Poms-RED-BLUE.jpg" alt="Image 4" style="width:100%" style="height:60%">
+        <div class="description">
+          <a class="image-grid" href="all6.html">SCARVES</a>
+          </div>
+      </div>
+      <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2020/10/Kopai-Paar-handmade-cushion-Silk-purple-block-print-set4-600x480.jpg" alt="Image 5" style="width:100%" style="height:60%">
+        <div class="description">
+          <a class="image-grid" href="all5.html">HANDLOOM COUSHIONS</a>
+          </div>
+      </div>
+      <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2022/10/All-Puppy-Animal-Cushion-Kopai-Paar-600x480.jpg" alt="Image 6" style="width:100%" style="height:60%">
+        <a class="image-grid" href="all1.html">FUN COUSHIONS</a>
+      </div>
+    </div>
+      <br>
+      <br>
+      <hr>
+      <div class="center">
+        <p><br>.....FEATURED PRODUCTS.....</p>
+      </div>
+      
+      <div class="image-grid">
+
+        <div class="image-container">
+        <img src="https://www.kopaipaar.com/wp-content/uploads/2020/10/Kopai-Paar-handmade-cushion-orange-cross-set-480x384.jpg" alt="Image 1" class="center-image" style="width:60%">
+          
+          <div class="image-overlay"></div>
+          <div class="project-details">
+          <a class="project-details" href="cushion.html"><h5><i>HANDLOOM CUSHION</i></h5></a>
+            
+          </div>
+          <div class="product-description">
+            
+            <p>HANDLOOM CUSHION (SET OF 2)<br>ORANGE CROSS SET<br>RS: 1000
+              <br>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span></p>
+            </p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.kopaipaar.com/wp-content/uploads/2019/10/Cushion-Blue-Stork-Katha2-480x384.jpg" alt="Image 2" class="center-image" style="width:60%">
+          <div class="image-overlay"></div>
+          <div class="project-details">
+            <a class="project-details" href="KANTHA BATIK.html"><h4><i>KANTHA BATIK CUSHION</i></h4></a>
+            
+          </div>
+          <div class="product-description" >
+            <p>KANTHA BATIK CUSHION<br>BLUE STORK<br>
+              Rs.1,200
+              <br>
+            <br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span></p>
+          </div>
+
+          
+        </div>
+        <div class="image-container">
+          <img src="https://www.kopaipaar.com/wp-content/uploads/2022/05/Blue4-Natural-Fibre-Basket-Bin-Kopai-Paar-480x384.jpg" alt="Image 3"class="center-image" style="width:60%">
+          <div class="image-overlay"></div>
+          <div class="project-details">
+            
+            <a class="project-details" href="MADUR3.html"> <h3><i>MADUR KATHI </i></h3></a>
+            
+          </div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & BLUE<br>
+              Rs.950
+              <br>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star "></span>
+              <span class="fa fa-star"></span></p></p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.kopaipaar.com/wp-content/uploads/2022/05/Colourful3-Natural-Fibre-Basket-Bin-Kopai-Paar-480x384.jpg" alt="Image 4" class="center-image" style="width:60%">
+          <div class="image-overlay"></div>
+          <div class="project-details">
+            <a class="project-details" href="MADUR4.html"><h3><i>MADUR KATHI</i></h3></a> 
+            
+          </div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> DUSTBIN BASKET – BEIGE & COLOURFULL<br>
+              Rs.950
+              <br>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></p></p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.kopaipaar.com/wp-content/uploads/2022/02/BlueN-Natural-Fibre-Laundry-Basket-Kopai-Paar-480x384.jpg " alt="Image 5" class="center-image" style="width:60%">
+          <div class="image-overlay"></div>
+          <div class="project-details">
+            <a class="project-details" href="MADUR5.html"> <h3><i>MADUR KATHI </i></h3></a> 
+            
+          </div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> LAUNDRY BASKET BEIGE & BLUE
+              <br> Rs.1,200
+              <br>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span></p></p>
+          </div>
+        </div>
+        <div class="image-container">
+          <img src="https://www.kopaipaar.com/wp-content/uploads/2021/03/Kopai-Paar.Picnic-Basket.Natural-Fibre.BlueGrey-480x384.jpg" alt="Image 6" class="center-image" style="width:60%">
+          <div class="image-overlay"></div>
+          <div class="project-details">
+            <a class="project-details" href="MADUR6.html"><h3><i>MADUR KATHI</i></h3></a> 
+            
+          </div>
+          <div class="product-description">
+            <p>MADUR KATHI (NATURAL FIBRE)<br> TIFFIN / PICNIC BASKET GREYS <br>
+              Rs.950
+              <br>
+              <br>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span></p>
+            </p>
+          </div>
+        </div>
+      </div>
+    <!-- Footer -->
+    <div class="footer">
+      &copy; 2023 My Website. All rights reserved.
+    </div>
+        
+  </body>
+</html>
